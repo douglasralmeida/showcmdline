@@ -5,7 +5,7 @@
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wunused-parameter"
 int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLine, int nCmdShow) {
-    wchar_t string[256];
+    wchar_t string[256] = {0};
 
     wcscat(string, L"\"");
     wcscat(string, lpCmdLine);
